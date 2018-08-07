@@ -45,6 +45,11 @@ namespace iUItests.PageObject
         public IWebElement Partner4Link => driver.FindElement(By.XPath("//div[@class='Search']//ul/li[4]/a"));
         public IWebElement Partner5Link => driver.FindElement(By.XPath("//div[@class='Search']//ul/li[5]/a"));
 
+
+        //NB Changes 
+        public IWebElement IncorPass => driver.FindElement(By.Id("lform_errCtrl"));
+
+
         public void FieldsDisplayed()
         {
             Assert.Multiple(() =>
@@ -63,6 +68,14 @@ namespace iUItests.PageObject
             });
             
         }
+
+        // NB Changes
+        public void SelectDomn()
+        {
+            var selectElement = new SelectElement(PostSelector);
+            selectElement.SelectByValue("ua.fm");
+        }
+
         public EmailBox Login()  //Enter your credentials
         {
             LoginField.SendKeys("sofi_mag@i.ua");

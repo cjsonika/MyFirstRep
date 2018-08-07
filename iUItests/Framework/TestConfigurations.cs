@@ -35,7 +35,10 @@ namespace iUItests.Framework
             XmlDocument xmlDoc = new XmlDocument();
             xmlDoc.Load(GetConfigFilePath());
             Browser = xmlDoc.DocumentElement.SelectSingleNode("browser").InnerText;
-            
+            // NB Changes
+            Username = xmlDoc.DocumentElement.SelectSingleNode("username").InnerText;
+            Password = xmlDoc.DocumentElement.SelectSingleNode("password").InnerText;
+
         }
 
         public static TestConfigurations GetInstanse()     

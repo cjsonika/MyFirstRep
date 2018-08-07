@@ -67,6 +67,7 @@
     <Compile Include="PageObject\EmailBox.cs" />
     <Compile Include="PageObject\TranslatePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\NBTest.cs" />
     <Compile Include="Tests\UploadDownloadFile.cs" />
     <Compile Include="Tests\InterfaceTesting.cs" />
     <Compile Include="Tests\LetterDelete.cs" />
