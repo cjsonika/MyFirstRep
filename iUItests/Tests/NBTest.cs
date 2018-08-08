@@ -35,18 +35,7 @@ namespace iUItests.Tests
             startPage.LoginButton.Click();
             Assert.IsTrue(startPage.IncorPass.Displayed);
 
-            ////emailBox.createLetterButton.Click();
-            //startPage.Login();
-            //Assert.Multiple(() =>   //Check credentias values
-            //{
-            //    Assert.AreEqual("sofi_mag@i.ua", startPage.LoginField.GetAttribute("value"));
-            //    Assert.AreEqual("agena123", startPage.PasswordField.GetAttribute("value"));
-            //});
-            //Assert.AreEqual("i.ua", startPage.PostSelector.GetAttribute("value"));
-            //Assert.IsFalse(startPage.RememberMe.Selected);
-            //startPage.LoginButton.Click(); //Submit login
-            //Assert.AreEqual("Вхідні - I.UA ", driver.Title);
-            //Assert.AreEqual("sofi_mag@i.ua", emailBox.MailOwner.Text);
+         
         }
     }
 }
